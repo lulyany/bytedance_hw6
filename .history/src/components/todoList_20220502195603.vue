@@ -3,7 +3,7 @@ import {Input} from 'ant-design-vue';
 import { DeleteOutlined, CheckOutlined, CheckCircleFilled, ToTopOutlined } from "@ant-design/icons-vue";
 import { ref } from 'vue'
 
-//接口
+//jie kou
 interface TodoType {
   title: string,
   is_completed: boolean,

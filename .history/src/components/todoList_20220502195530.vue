@@ -3,16 +3,13 @@ import {Input} from 'ant-design-vue';
 import { DeleteOutlined, CheckOutlined, CheckCircleFilled, ToTopOutlined } from "@ant-design/icons-vue";
 import { ref } from 'vue'
 
-//接口
 interface TodoType {
   title: string,
   is_completed: boolean,
   is_top: boolean
 };
-
 let todoList = ref<TodoType[]>([]);
 
-//排序
 const todoListSort = (list: TodoType[]):TodoType[] => {
   // 置顶
   let topList:TodoType[] = [];
